@@ -6,14 +6,6 @@ class Player extends Phaser.GameObjects.Sprite {
         this.vSpeed = 0;
         this.floorUnderBackHeight = 360; 
         this.floorUnderFrontHeight = 360; 
-        /**
-         * I have absolutely no idea what i did to make this function able
-         * to be called outside this class, but it works.
-         * This function calls instance functions that update the stored
-         * floor heights.
-         * @param {*} side 0 for back, 1 for front
-         * @param {*} platBack naming this platback was leftover from when i was just testing this
-         */ 
         this.evaluateFloor = function(side, platBack){
             if (side == 0){
                 this.evaluateFloorUnderBack(platBack);
@@ -30,11 +22,6 @@ class Player extends Phaser.GameObjects.Sprite {
     evaluateFloorUnderFront(platFront){
         this.floorUnderFrontHeight = platFront - 32;
     }
-
-    /**
-     * This function handles flor collision.
-     * @returns true if the player is grounded and false if they're airborne
-     */
     checkFloor() {
         
         if(this.y == this.floorUnderBackHeight || this.y == this.floorUnderFrontHeight){
