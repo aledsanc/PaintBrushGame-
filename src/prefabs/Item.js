@@ -1,3 +1,7 @@
+/* We created this new js file to make sure  the item that is created moves across the screen. 
+*/
+
+
 class Thing extends Phaser.GameObjects.Sprite {
     constructor(scene, x, y, texture, frame) {
         super(scene, x, y, texture, frame);

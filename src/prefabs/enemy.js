@@ -1,4 +1,8 @@
-class Plat extends Phaser.GameObjects.Sprite {
+/* We created this new js file to make sure  the item that is created moves across the screen. 
+*/
+
+
+class enemy extends Phaser.GameObjects.Sprite {
     constructor(scene, x, y, texture, frame) {
         super(scene, x, y, texture, frame);
         scene.add.existing(this);
@@ -11,10 +15,8 @@ class Plat extends Phaser.GameObjects.Sprite {
         }
     }
 
-   
     reset() {
         this.x = game.config.width;
-        this.y = game.config.height;
-        //392 - (16 * (Math.floor(Math.random() * 6))); 
+        this.y = 392 - (16 * (Math.floor(Math.random() * 6))); 
     }
 }
