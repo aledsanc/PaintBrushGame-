@@ -17,4 +17,4 @@ class Plat extends Phaser.GameObjects.Sprite {
         this.y = game.config.height;
         //392 - (16 * (Math.floor(Math.random() * 6))); 
     }
-}
+} 
