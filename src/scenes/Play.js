@@ -28,7 +28,7 @@ class Play extends Phaser.Scene {
         });
         this.pl1.play({ key: 'running1', repeat: -1 });
 
-       
+       // this creates the plats in a linear fashision 
         this.plats = new Array(3000); 
         for (let i = 0; i < 3000; i++){
             this.plats[i] = new Plat(this, 32 * i, 392, 'plat', 0).setOrigin(0, 0);

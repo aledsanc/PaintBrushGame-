@@ -15,7 +15,7 @@ class Player extends Phaser.GameObjects.Sprite {
             }
         }       
     }
-
+    /// this is where we check its the 
     evaluateFloorUnderBack(platBack){
         this.floorUnderBackHeight = platBack - 32;
     }
@@ -40,7 +40,7 @@ class Player extends Phaser.GameObjects.Sprite {
         }
         else{
             return false;
-        }
+        } 
     }
 
     update() {

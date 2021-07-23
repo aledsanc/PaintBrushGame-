@@ -1,4 +1,4 @@
-/* We created this new js file to make sure  the item that is created moves across the screen. 
+/* We created this new js file to make sure  the enemy   is created moves across the screen. 
 */
 
 

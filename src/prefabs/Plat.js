@@ -5,6 +5,7 @@ class Plat extends Phaser.GameObjects.Sprite {
     }
 
     update() {
+        /// here is where we make the platforms move 
         this.x -= 4;
         if(this.x <= 0 - this.width) {
             this.reset();
@@ -13,8 +14,9 @@ class Plat extends Phaser.GameObjects.Sprite {
 
    
     reset() {
+        /// here is where we make the one big plat under the players 
         this.x = game.config.width;
         this.y = game.config.height;
-        //392 - (16 * (Math.floor(Math.random() * 6))); 
+        
     }
 } 
